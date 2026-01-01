@@ -8,14 +8,17 @@
 - AI/ML Frameworks & Libraries: 
   - LangChain - Framework for building AI agents
     1. langchain-core - Core abstractions (messages, tools, runnables)
-    2. langchain-huggingface - HuggingFace LLM integration (replaced langchain-google-genai)
-    3. (removed langchain-tavily - Tavily web search integration) 
+    2. langchain-huggingface - HuggingFace LLM integration 
+(**update:** replaced langchain-google-genai)
+    3. (**update:** removed langchain-tavily - Tavily web search integration feature) 
   - Pydantic - Data validation and settings management 
     1. pydantic 
 
 - LLM Providers & APIs: 
-  - HuggingFace (Meta LLaMA 3 / Zephyr models) (replaced gemini-2.0-flash-lite model)
-    1. huggingface-hub - HuggingFace API client (replaced google-generativeai - Google's Generative AI Python SDK) 
+  - HuggingFace (Meta LLaMA 3 / Zephyr models) 
+(**update:** replaced gemini-2.0-flash-lite model)
+    1. huggingface-hub - HuggingFace API client 
+(**update:** replaced google-generativeai - Google's Generative AI Python SDK) 
 
 - Vector Database & Embeddings: 
   - FAISS - Facebook AI Similarity Search for vector indexing
@@ -30,17 +33,18 @@
 - Utility Libraries: 
   1. python-dotenv - Environment variable and API key management
   2. pickle - Serialization for chunk storage (built-in) 
-  3. pathlib, os, time, json, typing - Python Standard library modules (pre-installed, import direct)
+  3. pathlib, os, time, json, typing - Python Standard library modules (pre-installed)
 
 - Web Search & APIs: 
-  - (removed Tavily Search API - AI-optimized web search for agents)
   - Wikipedia REST API - Knowledge retrieval via wiki_lookup tool
   - Requests (requests) - HTTP client library
+<!-- (removed Tavily Search API - AI-optimized web search for agents) -->
 
 - External APIs Required: 
-  - HuggingFace API (requires HF_TOKEN in .env) (replaced Google GEMINI_API_KEY) 
-  - (removed Tavily Search API (requires TAVILY_API_KEY in .env))
+  - HuggingFace API (requires HF_TOKEN in .env) 
   - Wikipedia REST API (public, no key required)
+<!-- (replaced Google GEMINI_API_KEY)  
+     (removed Tavily Search API (requires TAVILY_API_KEY in .env)) -->
 
 - Architecture & Patterns: 
   - ReAct Agent Pattern - Reason → Act → Observe loop
